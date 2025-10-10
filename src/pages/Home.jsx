@@ -27,8 +27,32 @@ const Home = () => {
 
       <section className="container contact-section">
         <div className="contact-left">
-          <h3>Interested in working together?</h3>
-          <p>Reach out and let's build something great.</p>
+          <h3>Full‑Stack web development</h3>
+          <p>
+            I build production‑ready web applications with clean, component-driven frontends and reliable backend APIs. I focus on performance, accessibility and maintainability, and I enjoy turning product ideas into polished user experiences.
+          </p>
+
+          <ul className="about-list">
+            <li>Ship fast: prototypes to production with clear priorities and pragmatic architecture.</li>
+            <li>Design-minded: polished UI powered by React + Tailwind for consistent design systems.</li>
+            <li>APIs & data: reliable Express.js backends and integrations with Firebase or MongoDB.</li>
+          </ul>
+
+          <div className="skills" aria-hidden>
+            <span className="skill">React</span>
+            <span className="skill">Tailwind CSS</span>
+            <span className="skill">Express.js</span>
+            <span className="skill">Firebase</span>
+            <span className="skill">MongoDB</span>
+            <span className="skill">TypeScript</span>
+            <span className="skill">Vite</span>
+          </div>
+
+          <p className="about-cta">Interested? View my projects or send a quick note — I typically respond within 48 hours.</p>
+          <div className="hero-actions" style={{marginTop:'.6rem'}}>
+            <a className="btn primary" href="#projects">View work</a>
+            <a className="btn ghost" href="mailto:ernestfakokunde9@gmail.com">Hire me</a>
+          </div>
         </div>
         <div className="contact-right">
           <ContactForm />

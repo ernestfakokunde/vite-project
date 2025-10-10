@@ -1,8 +1,9 @@
-﻿import React from "react";
+﻿import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaFacebook, FaTiktok, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
   const socialLinks = {
     github: "https://github.com/ernestfakokunde",
@@ -13,14 +14,22 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container nav-inner">
-        <ul className="nav-list">
-          <li><NavLink to="/" end className={({isActive}) => isActive ? "active" : ""}>Home</NavLink></li>
-          <li><NavLink to="/projects" className={({isActive}) => isActive ? "active" : ""}>Projects</NavLink></li>
-          <li><NavLink to="/about" className={({isActive}) => isActive ? "active" : ""}>About</NavLink></li>
-        </ul>
+        <div className="nav-left">
+          <button className="hamburger" onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
+            <span className={`hamburger-line ${open ? 'open' : ''}`} />
+            <span className={`hamburger-line ${open ? 'open' : ''}`} />
+            <span className={`hamburger-line ${open ? 'open' : ''}`} />
+          </button>
+          <ul className={`nav-list ${open ? 'open' : ''}`}>
+            <li><NavLink to="/" end onClick={() => setOpen(false)} className={({isActive}) => isActive ? "active" : ""}>Home</NavLink></li>
+            <li><NavLink to="/projects" onClick={() => setOpen(false)} className={({isActive}) => isActive ? "active" : ""}>Projects</NavLink></li>
+            <li><NavLink to="/about" onClick={() => setOpen(false)} className={({isActive}) => isActive ? "active" : ""}>About</NavLink></li>
+          </ul>
+        </div>
+
         <div className="nav-cta">
           <a className="btn" href="mailto:ernestfakokunde9@gmail.com">Hire Me</a>
-           <div className="flex space-x-4 text-2xl text-white mt-2">
+           <div className="flex space-x-4 text-2xl text-white mt-2 social-icons">
       <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
         <FaGithub className="hover:text-blue-400 transition" />
       </a>
@@ -39,6 +48,8 @@ const Navbar = () => {
            </div>
         </div>
       </div>
+      {/* mobile overlay menu */}
+      <div className={`mobile-menu ${open ? 'visible' : ''}`} onClick={() => setOpen(false)} />
     </nav>
   );
 };

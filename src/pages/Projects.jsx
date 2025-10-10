@@ -13,7 +13,7 @@ const projects = [
 const Projects = () => {
   return (
     <section className="container projects-page">
-      <h2>All projects</h2>
+      <h2 className="text-3xl font-bold tracking-wide mb-4">All projects</h2>
       <div className="projects-grid">
         {projects.map(p => <ProjectCard key={p.title} {...p} />)}
       </div>
