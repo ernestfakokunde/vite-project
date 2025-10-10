@@ -10,7 +10,7 @@ const About = () => {
       </p>
       <ul className="about-list space-y-5 font-bold">
         <li>Experience: Frontend & Backend</li>
-        <li>Skills: HTML, CSS, JavaScript, React, Node</li>
+        <li>Skills: HTML, CSS, JavaScript, React, Node.js,express, frameworks including Next.js, tailwind css, Redux, and others</li>
         <li>Location: Abuja, Nigeria</li>
         <li>Email: ernestfakokunde9@gmail.com</li>
       </ul>
