@@ -4,13 +4,14 @@ import ProjectCard from "../components/ProjectCard";
 import ContactForm from "../components/ContactForm";
 
 // Import images from src/assets so Vite can bundle them
-import Ecommerce from "../assets/ecommerce.png";
 import AyoVR from "../assets/AyoVR.png";
 import Zen from "../assets/Zen.png";
+import swiftdrop from "../assets/swiftdrop.png";
 
 const projects = [
   { title: "Zen autos", desc: "Logistics landing page", img: Zen, tags: ["React","Tailwind"] },
-  { title: "Ayodele-store", desc: "E-commerce store", img: Ecommerce, tags: ["React","Tailwind", "Firebase"] },
+  { title: "Transport logistic page", desc: "swift-drop", img: swiftdrop, tags: ["React","Tailwind", "Firebase"] },
+  { title: "SwiftDrop", desc: "Transport logistic page", img: swiftdrop, tags: ["React","Tailwind", "Firebase"] },
   { title: "Futuristic.io", desc: "Web3 hero", img: AyoVR, tags: ["React","Tailwind"] },
 ];
 

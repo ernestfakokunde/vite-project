@@ -1,11 +1,10 @@
 ﻿import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import Ecommerce from "../assets/ecommerce.png";
 import AyoVR from "../assets/AyoVR.png";
 import Zen from "../assets/Zen.png";
-
+import swiftdrop from "../assets/swiftdrop.png";
 const projects = [
-  { title: "Zen Ecommerce", desc: "Ecommerce landing page", img: Ecommerce, tags: ["React","Tailwind"] },
+  { title: "Zen Ecommerce", desc: "Tansport logistic landing pagen", img: swiftdrop, tags: ["React","Tailwind"] },
   { title: "Ayodele VR", desc: "Interactive VR demo", img: AyoVR, tags: ["React","Tailwind"] },
   { title: "Zen Autos", desc: "Web3 hero", img: Zen, tags: ["React","Tailwind"] },
 ];
