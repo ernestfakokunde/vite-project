@@ -7,12 +7,14 @@ import ContactForm from "../components/ContactForm";
 import AyoVR from "../assets/AyoVR.png";
 import Zen from "../assets/Zen.png";
 import swiftdrop from "../assets/swiftdrop.png";
+import cocacola from "../assets/cocacola.png";
 
 const projects = [
   { title: "Zen autos", desc: "Logistics landing page", img: Zen, tags: ["React","Tailwind"] },
   { title: "Transport logistic page", desc: "swift-drop", img: swiftdrop, tags: ["React","Tailwind", "Firebase"] },
   { title: "SwiftDrop", desc: "Transport logistic page", img: swiftdrop, tags: ["React","Tailwind", "Firebase"] },
   { title: "Futuristic.io", desc: "Web3 hero", img: AyoVR, tags: ["React","Tailwind"] },
+  {title:"Coca-cola", desc:"Thrilling Coca-cola UI", img:cocacola, tags:["React","Tailwind"] }
 ];
 
 const Home = () => {
