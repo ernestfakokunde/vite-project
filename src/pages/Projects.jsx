@@ -4,11 +4,14 @@ import AyoVR from "../assets/AyoVR.png";
 import Zen from "../assets/Zen.png";
 import swiftdrop from "../assets/swiftdrop.png";
 import cocacola from "../assets/cocacola.png";
+import devconnect from "../assets/devconnect.png";
+
 const projects = [
   { title: "Zen Ecommerce", desc: "Tansport logistic landing pagen", img: swiftdrop, tags: ["React","Tailwind"] },
   { title: "Ayodele VR", desc: "Interactive VR demo", img: AyoVR, tags: ["React","Tailwind"] },
   { title: "Zen Autos", desc: "Web3 hero", img: Zen, tags: ["React","Tailwind"] },
-  {title:"Coca-cola", desc:"Thrilling Coca-cola UI", img:cocacola, tags:["React","Tailwind"], href:"https://coca-cola-three.vercel.app/" }
+  {title:"Coca-cola", desc:"Thrilling Coca-cola UI", img:cocacola, tags:["React","Tailwind"], href:"https://coca-cola-three.vercel.app/" },
+  {title:"Dev-connect", desc:"A social media style platform that showcases the power of socket.io via chats and CRUD operations ", img:devconnect, tags:["React", "express","Socket.io","Aws"], href:"https://dev-connect-three-ebon.vercel.app/"},
 ];
 
 const Projects = () => {
